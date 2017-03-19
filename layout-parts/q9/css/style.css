@@ -2,4 +2,66 @@
 
 /* 回答はここに書いてね */
 
+* {
+  box-sizing: border-box;
+}
+
+.grid-box {
+  padding: 10px;
+  background-color: #ecf1f2;
+}
+
+.grid-box__row {
+  font-size: 0; /* ここでfont-sizeを16pxではなく0にしておかないと、セルのサイズが収まらなくなる */
+}
+
+.grid-box__row__cell {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+}
+
+.grid-box__row__col__cell--12 {
+  width: 100%;
+  padding: 10px;
+  display: inline-block;
+  font-size: 16px; /* ここでfont-sizeを16pxにすると、何故かピッタリ収まる */
+}
+
+.grid-box__row__col__cell--6 {
+  width: 50%;
+  padding: 10px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.grid-box__row__col__cell--4 {
+  width: 33.333%;
+  padding: 10px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.grid-box__row__col__cell--3 {
+  width: 25%;
+  padding: 10px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.grid-box__row__col__cell--2-4 {
+  width: 20%;
+  padding: 10px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.grid-box__row__col__cell--2 {
+  width: 16.667%;
+  padding: 10px;
+  display: inline-block;
+  font-size: 16px;
+}
+
 /* 回答はここに書いてね */

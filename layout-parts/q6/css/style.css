@@ -2,4 +2,51 @@
 
 /* 回答はここに書いてね */
 
-/* 回答はここに書いてね */
+/* Define Size of Layout */
+* {
+  box-sizing: border-box;
+}
+
+.title__text-color {
+  color: #fff;
+}
+
+.small {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+.middle {
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  padding: 6px 20px;
+}
+
+.large {
+  border-radius: 7px;
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
+  padding: 7px 25px;
+}
+
+
+/* Define Style of Layout */
+.common {
+  background-color: #00bcd4;
+}
+.error {
+  background-color: #ff4081;
+}
+.disabled {
+  background-color: #e5e5e5;
+}
+.shadow {
+  box-shadow: 0 1px 6px rgba(0,0,0,.12);
+  color: #222;
+}

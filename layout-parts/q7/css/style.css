@@ -2,4 +2,174 @@
 
 /* 回答はここに書いてね */
 
-/* 回答はここに書いてね */
+* {
+  box-sizing: border-box;
+}
+
+
+/* Reset Input Tag */
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-box {
+  text-align: center;
+}
+
+.main-box__child-box {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+/* Input Text */
+.main-box__child-box__input-text {
+  border: solid #ccc 1px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.main-box__child-box__input-text:focus {
+  box-shadow: 0 0 7px #00bcd4;
+}
+
+
+input[type="text"]::-webkit-input-placeholder {
+  color: #00bcd4;
+}
+
+
+/* Input Textarea */
+.main-box__child-box__input-textarea {
+  resize: none;
+  height: 40;
+  border: 1px solid #00bcd4;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+/* Radio Button */
+label {
+  cursor: pointer;
+}
+
+.main-box__child-box__label__radio-btn {
+  display: none;
+}
+
+.main-box__child-box__label__radio-text {
+  position: relative;
+  padding: 3px 3px 3px 20px;
+  display: inline-block;
+}
+
+.main-box__child-box__label__radio-text:before {
+  position: absolute;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  top: 3px;
+  left: 0;
+  content: '';
+}
+
+.main-box__child-box__label__radio-btn:checked +
+.main-box__child-box__label__radio-text:after {
+  position: absolute;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background: #00bcd4;
+  top: 7px;
+  left: 4px;
+  content: '';
+}
+
+
+
+/* Checkbox */
+.main-box__child-box__label__check-btn {
+  display: none;
+}
+
+.main-box__child-box__label__check-text {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 22px;
+}
+
+.main-box__child-box__label__check-text:before {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: '';
+}
+
+.main-box__child-box__label__check-btn:checked +
+.main-box__child-box__label__check-text:after {
+  border-left: 2px solid #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+  width: 13px;
+  height: 5px;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  transform: rotate(-45deg);
+  content: '';
+}
+
+
+.main-box__child-box__dropdown-box {
+  position: relative;
+}
+
+.main-box__child-box__dropdown-box__select {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px 30px 5px 5px;
+  font-size: 14px;
+}
+
+.main-box__child-box__dropdown-box:before {
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 9px;
+  transform: rotate(-45deg);
+}
+
+.main-box__child-box__button {
+  border: 1px solid #00bcd4;
+  color: #00bcd4;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-box__child-box__button:active {
+  background: #00bcd4;
+  color: #fff;
+}
