@@ -2,4 +2,173 @@
 
 /* 回答はここに書いてね */
 
+input, textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-box {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ecf1f2;
+}
+
+.title-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.title-box:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+
+.title-box__form-title {
+  position: relative;
+  font-size: 24px;
+  background: #ecf1f2;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.form-box {
+
+}
+
+.form-box__left-box {
+  width: 300px;
+  float: left;
+}
+
+.form-box__left-box__upper-box {
+
+}
+
+.form-box__left-box__upper-box__items {
+
+}
+
+.form-box__left-box__upper-box__items__row {
+  margin-bottom: 22px;
+}
+
+.form-box__left-box__upper-box__items__row__label {
+  width: 100px;
+  float: left;
+  text-align: right;
+}
+
+.is-required {
+  position: relative;
+}
+
+.is-required:after {
+  content: '*';
+  color: #f00;
+}
+
+.form-box__left-box__upper-box__items__row__input-text {
+  border-radius: 3px;
+  width: 180px;
+  float: right;
+  background: #fff;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.label-sex:first-of-type {
+  float: left;
+  cursor: pointer;
+  width: 60px;
+  margin-left: 40px;
+}
+
+.label-sex__btn {
+  display: none;
+}
+
+.label-text {
+  position: relative;
+}
+
+.label-text:before {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 1px solid #ccc;
+  content: '';
+  border-radius: 50%;
+  top: 3px;
+  left: -20px;
+}
+
+.label-sex__btn:checked + .label-text:after {
+  position: absolute;
+  top: 6px;
+  left: -16px;
+  width: 8px;
+  height: 8px;
+  background: #00bcd4;
+  border-radius: 50%;
+  content: '';
+}
+
+.form-box__left-box__lower-box {
+  text-align: right;
+}
+
+.submit-btn {
+  padding: 0 10px;
+  background: #00bcd4;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  line-height: 26px;
+}
+
+.form-box__right-box {
+  width: 380px;
+  float: right;
+}
+
+.form-box__right-box__textarea {
+  width: 100%;
+  height: 203px;
+  padding: 10px;
+  border-radius: 3px;
+  background: #fff;
+  resize: none;
+  box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
 /* 回答はここに書いてね */

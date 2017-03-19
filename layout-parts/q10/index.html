@@ -39,23 +39,42 @@
         <!-- 回答はここに書いてね -->
         <div class="main-box">
           <div class="title-box">
-
+            <span class="title-box__form-title">Form Exercise</span>
           </div>
-          <form class="form-box">
+          <form class="form-box clearfix">
             <div class="form-box__left-box">
               <div class="form-box__left-box__upper-box">
                 <ul class="form-box__left-box__upper-box__items">
-                  <li class="form-box__left-box__upper-box__items__row">
-
+                  <li class="form-box__left-box__upper-box__items__row clearfix">
+                    <div class="form-box__left-box__upper-box__items__row__label is-required">
+                      name
+                    </div>
+                    <input name="input-name" type="text" class="form-box__left-box__upper-box__items__row__input-text" required>
                   </li>
-                  <li class="form-box__left-box__upper-box__items__row">
-
+                  <li class="form-box__left-box__upper-box__items__row clearfix">
+                    <div class="form-box__left-box__upper-box__items__row__label">
+                      Sex
+                    </div>
+                    <label class="label-sex">
+                      <input name="label-sex" class="label-sex__btn" type="radio">
+                      <span class="label-text">male</span>
+                    </label>
+                    <label class="label-sex">
+                      <input name="label-sex" class="label-sex__btn" type="radio">
+                      <span class="label-text">female</span>
+                    </label>
                   </li>
-                  <li class="form-box__left-box__upper-box__items__row">
-
+                  <li class="form-box__left-box__upper-box__items__row clearfix">
+                    <div class="form-box__left-box__upper-box__items__row__label is-required">
+                      Email
+                    </div>
+                    <input name="input-email" type="text" class="form-box__left-box__upper-box__items__row__input-text" placeholder="ex) hoge@gmail.com" required>
                   </li>
-                  <li class="form-box__left-box__upper-box__items__row">
-
+                  <li class="form-box__left-box__upper-box__items__row clearfix">
+                    <div class="form-box__left-box__upper-box__items__row__label">
+                      Telephone
+                    </div>
+                    <input name="input-telephone" type="text" class="form-box__left-box__upper-box__items__row__input-text" placeholder="ex) 08012345678">
                   </li>
                 </ul>
               </div>
@@ -64,7 +83,7 @@
               </div>
             </div>
             <div class="form-box__right-box">
-              <textarea placeholder="Please fill in the message..."></textarea>
+              <textarea name="input-message" class="form-box__right-box__textarea" placeholder="Please fill in the message..."></textarea>
             </div>
           </form>
         </div>
