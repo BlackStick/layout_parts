@@ -1,5 +1,39 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.hukidashi {
+  width: 500px;
+  padding: 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  line-height: 16px;
+  box-sizing: border-box;
+  border: 5px #222 solid;
+  margin: 0 auto;
+  position: relative;
+}
 
+.hukidashi:before {
+  content: '';
+  position: absolute;
+  left: 50px;
+  bottom: -20%;
+  border-top: 30px solid #222;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.hukidashi:after {
+  content: '';
+  position: absolute;
+  left: 50px;
+  bottom: -15%;
+  border-top: 30px solid #fff;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  width: 0;
+  height: 0;
+}
 /* 回答はここに書いてね */
